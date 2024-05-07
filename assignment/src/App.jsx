@@ -1,4 +1,5 @@
 import React from "react";
+import "./nav.css";
 import banner from "./images/Hero-3.png";
 import l1 from "./images/Welcome -L-1.png";
 import l2 from "./images/Welcome -L-2.png";
@@ -19,14 +20,12 @@ import p2 from "./images/P-2.png";
 import p3 from "./images/P-3.png";
 import p4 from "./images/P-4.png";
 
-
 import logo from "./images/Logo.png";
 
 import { FaPhone } from "react-icons/fa6";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import { RiArrowDropDownLine } from "react-icons/ri";
 
-import "./nav.css";
 function App() {
   return (
     <>
@@ -76,7 +75,7 @@ function App() {
       </div>
       {/* second section */}
 
-      <div className=" absolute inset-0 flex items-end justify-center lg:-bottom-24 md:-bottom-48 -bottom-72">
+      <div className=" absolute inset-0 flex items-end justify-center lg:-bottom-24 md:-bottom-48  -bottom-[500px] ">
         <div className="w-3/4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-4 border-b-2 shadow-md rounded-sm bg-white h-[600px] md:h-[400px] lg:h-[200px]">
           {/* First child div */}
           <div className="border-r-2 p-4">
@@ -107,7 +106,7 @@ function App() {
 
           {/* Third child div */}
           <div className=" p-4">
-            <h3 className="my-2 text-gray-900">Enter Your Email</h3>
+            <h3 className="my-2 text-gray-400">Enter Your Email</h3>
             <hr className=" h-[2px] bg-gray-400" />
             <h3 className="my-2 text-gray-400">Enter Your Current City</h3>
             <hr className=" h-[1.6px] bg-gray-400" />
@@ -124,11 +123,11 @@ function App() {
 
       {/*/***********  After CTA section Third section *******************/}
 
-      <div className=" font-geomanist w-3/4 m-auto pt-40 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4 mt-[200px] md:mt-[120px] lg:mt-0">
+      <div className=" font-geomanist w-3/4 m-auto pt-40 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4 mt-[400px] md:mt-[120px] lg:mt-0">
         {/* First child div */}
         <div className="p-4">
           <h4 class="A_Few_Words">A Few Words</h4>
-          <div className="bg-pink-500 h-1 left-[196px] mt-2 absolute w-[70px] z-20" />
+          <div className="bg-pink-500 h-1 lg:left-[196px] md:left-[100px] left-[50px] mt-2 absolute w-[70px] z-20" />
           <h1 className="text-4xl font-geomanist text-gray-800 leading-tight mt-6 pr-3">
             Welcome to <span className="font-bold">Artflare</span>
           </h1>
@@ -194,7 +193,7 @@ function App() {
       >
         <div className=" px-4 lg:w-[26%] md:w-[60%] w-[90%] mx-[4%] mt-12 lg:mx-[10%] pt-6">
           <h4 class="A_Few_Words">Contact Us</h4>
-          <div className="bg-pink-500 h-1 left-[155px] mt-2 absolute w-[70px] z-20" />
+          <div className="bg-pink-500 h-1 lg:left-[160px] md:left-[55px] left-[20px] mt-2 absolute w-[70px] z-20" />
           <h2 className="text-4xl font-geomanist text-white leading-tight mt-6">
             Please <span className="font-bold">Call Us</span> to get an ultimate{" "}
             <span className="font-bold">Home Solution</span>
@@ -388,67 +387,64 @@ function App() {
         </div>
         {/* Second part of the sixth section */}
 
-
         <div className=" font-geomanist lg:w-3/4 w-[96%] md:w-[96%] pt-20 m-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4 pb-20">
-        <div className="relative group">
-          <img src={p1} alt="" className="w-full" />
-          <div className=" absolute inset-0 p-6 text-left bg-gradient-to-tl from-blue-700/90 transition-all  to-pink-500 text-white font-semibold opacity-0 group-hover:opacity-100 duration-700">
-            <h4>Ceiling Painting</h4>
-            <p className="">
-              Being the leading house painters in Kolkata, we never miss out.
-            </p>
+          <div className="relative group">
+            <img src={p1} alt="" className="w-full" />
+            <div className=" absolute inset-0 p-6 text-left bg-gradient-to-tl from-blue-700/90 transition-all  to-pink-500 text-white font-semibold opacity-0 group-hover:opacity-100 duration-700">
+              <h4>Ceiling Painting</h4>
+              <p className="">
+                Being the leading house painters in Kolkata, we never miss out.
+              </p>
+            </div>
+            <div className="absolute bottom-0 bg-black/10 w-full h-16 flex justify-between items-center">
+              <p className="text-white font-semibold pl-4">Ceiling Painting</p>
+              <MdOutlineArrowOutward className="text-white text-2xl mr-3" />
+            </div>
           </div>
-          <div className="absolute bottom-0 bg-black/10 w-full h-16 flex justify-between items-center">
-            <p className="text-white font-semibold pl-4">Ceiling Painting</p>
-            <MdOutlineArrowOutward className="text-white text-2xl mr-3" />
-          </div>
-        </div>
 
-        <div className="relative group">
-          <img src={p2} alt="" className="w-full" />
-          <div className=" absolute inset-0 p-6 text-left bg-gradient-to-tl from-blue-700/90 transition-all  to-pink-500 text-white font-semibold opacity-0 group-hover:opacity-100 duration-700">
-            <h4>Ceiling Painting</h4>
-            <p className="">
-              Being the leading house painters in Kolkata, we never miss out.
-            </p>
+          <div className="relative group">
+            <img src={p2} alt="" className="w-full" />
+            <div className=" absolute inset-0 p-6 text-left bg-gradient-to-tl from-blue-700/90 transition-all  to-pink-500 text-white font-semibold opacity-0 group-hover:opacity-100 duration-700">
+              <h4>Ceiling Painting</h4>
+              <p className="">
+                Being the leading house painters in Kolkata, we never miss out.
+              </p>
+            </div>
+            <div className="absolute bottom-0 bg-black/10 w-full h-16 flex justify-between items-center">
+              <p className="text-white font-semibold pl-4">Ceiling Painting</p>
+              <MdOutlineArrowOutward className="text-white text-2xl mr-3" />
+            </div>
           </div>
-          <div className="absolute bottom-0 bg-black/10 w-full h-16 flex justify-between items-center">
-            <p className="text-white font-semibold pl-4">Ceiling Painting</p>
-            <MdOutlineArrowOutward className="text-white text-2xl mr-3" />
-          </div>
-        </div>
 
-        <div className="relative group">
-          <img src={p3} alt="" className="w-full" />
-          <div className=" absolute inset-0 p-6 text-left bg-gradient-to-tl from-blue-700/90 transition-all  to-pink-500 text-white font-semibold opacity-0 group-hover:opacity-100 duration-700">
-            <h4>Ceiling Painting</h4>
-            <p className="">
-              Being the leading house painters in Kolkata, we never miss out.
-            </p>
+          <div className="relative group">
+            <img src={p3} alt="" className="w-full" />
+            <div className=" absolute inset-0 p-6 text-left bg-gradient-to-tl from-blue-700/90 transition-all  to-pink-500 text-white font-semibold opacity-0 group-hover:opacity-100 duration-700">
+              <h4>Ceiling Painting</h4>
+              <p className="">
+                Being the leading house painters in Kolkata, we never miss out.
+              </p>
+            </div>
+            <div className="absolute bottom-0 bg-black/10 w-full h-16 flex justify-between items-center">
+              <p className="text-white font-semibold pl-4">Ceiling Painting</p>
+              <MdOutlineArrowOutward className="text-white text-2xl mr-3" />
+            </div>
           </div>
-          <div className="absolute bottom-0 bg-black/10 w-full h-16 flex justify-between items-center">
-            <p className="text-white font-semibold pl-4">Ceiling Painting</p>
-            <MdOutlineArrowOutward className="text-white text-2xl mr-3" />
-          </div>
-        </div>
 
-        <div className="relative group">
-          <img src={p4} alt="" className="w-full" />
-          <div className=" absolute inset-0 p-6 text-left bg-gradient-to-tl from-blue-700/90 transition-all  to-pink-500 text-white font-semibold opacity-0 group-hover:opacity-100 duration-700">
-            <h4>Ceiling Painting</h4>
-            <p className="">
-              Being the leading house painters in Kolkata, we never miss out.
-            </p>
+          <div className="relative group">
+            <img src={p4} alt="" className="w-full" />
+            <div className=" absolute inset-0 p-6 text-left bg-gradient-to-tl from-blue-700/90 transition-all  to-pink-500 text-white font-semibold opacity-0 group-hover:opacity-100 duration-700">
+              <h4>Ceiling Painting</h4>
+              <p className="">
+                Being the leading house painters in Kolkata, we never miss out.
+              </p>
+            </div>
+            <div className="absolute bottom-0 bg-black/10 w-full h-16 flex justify-between items-center">
+              <p className="text-white font-semibold pl-4">Ceiling Painting</p>
+              <MdOutlineArrowOutward className="text-white text-2xl mr-3" />
+            </div>
           </div>
-          <div className="absolute bottom-0 bg-black/10 w-full h-16 flex justify-between items-center">
-            <p className="text-white font-semibold pl-4">Ceiling Painting</p>
-            <MdOutlineArrowOutward className="text-white text-2xl mr-3" />
-          </div>
-        </div>
         </div>
       </div>
-
-
     </>
   );
 }
